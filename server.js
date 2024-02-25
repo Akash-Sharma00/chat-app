@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, "/frontend/dist")));
 //   res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 // });
 
-server.listen(PORT, () => {
+server.listen(PORT,"0.0.0.0", () => {
   connectToDb();
   console.log(`Server is started at ${PORT}`);
 });
